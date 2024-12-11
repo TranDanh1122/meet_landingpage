@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+:root {
+    --cyan-600: #4D96A9;
+    --cyan-300: #8FE3F9;
+    --purple-600: #855FB1;
+    --purple-300: #D9B8FF;
+    --state-900: #28283D;
+    --state-600: #87879D;
+    --state-300: #D1D1DF;
+    --white: #FAFAFA;
+}
+
+html,
+body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: unset;
+    color: inherit;
+}
+
+main,
+header {
+    width: 100%;
+    height: auto;
+}
+
+/* header logo, hero section css */
+.logo {
+    width: 7.5rem;
+    height: 1.75rem;
+    margin-top: 5rem;
+}
+
+.logo_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.hero {
+    margin-top: 4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.hero img {
+    width: 24.75rem;
+    height: 18.75rem;
+    object-fit: cover;
+}
+
+.hero_left {
+    margin-left: -2rem;
+}
+
+.hero_right {
+    margin-right: -2rem;
+}
+
+.hero_middle {
+    text-align: center;
+    padding: 1.5rem 0rem;
+
+}
+
+.hero_middle .title {
+    font-size: 4rem;
+    color: var(--state-900);
+    line-height: 110%;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.hero_middle .subtitle {
+    font-size: 1.125rem;
+    color: var(--state-600);
+    line-height: 150%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero_middle .action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.action {
+    padding: 0 2.5rem;
+}
+
+.action a {
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 900;
+    padding: 1rem 3.5rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.action .download {
+    background-color: var(--cyan-600);
+}
+
+.action .moreinfo {
+    background-color: var(--purple-600);
+}
+
+.download span {
+    color: var(--cyan-300);
+    margin-left: .25rem;
+}
+
+/* end header logo, hero section css */
+/* main content section section css */
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: column nowrap;
+    gap: 4rem;
+    margin-top: 4rem;
+}
+
+.img_album {
+    display: grid;
+    grid-template: 1fr/ 1fr 1fr 1fr 1fr;
+    gap: 2rem
+}
+
+.img_album img {
+    object-fit: cover;
+    width: 16rem;
+    height: 16rem;
+    aspect-ratio: 1;
+}
+
+.step_wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.step {
+    line-height: 150%;
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--state-600);
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--state-600);
+    border-radius: 50%;
+}
+
+.line {
+    height: 6rem;
+    width: 1px;
+    background-color: var(--state-300);
+}
+
+.content {
+    text-align: center;
+    width: 50%;
+}
+
+.content .subtitle {
+    color: var(--cyan-600);
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+}
+
+.content .title {
+    color: var(--state-900);
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 110%;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.content .desc {
+    color: var(--state-600);
+    font-size: 1.125rem;
+    line-height: 150%;
+}
+
+/* end main content section section css */
+
+/* footer section section css */
+footer {
+    margin-top: 4.5rem;
+}
+footer .step_wrapper {
+    transform: translateY(20%);
+    z-index: 2;
+    position: relative;
+
+}
+footer .step {
+    background-color: var(--white);
+}
+.footer {
+    width: 100%;
+    height: auto;
+    background-image: url(assets/desktop/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.footer .foot_content {
+    width: 100%;
+    height: 19.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    align-items: center;
+    z-index: 0;
+    text-align: left;
+}
+
+.overplay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cyan-600);
+    z-index: 1;
+    opacity: 0.8;
+}
+.footer .title {
+    color: var(--white);
+    font-size: 2.5rem;
+    line-height: 110%;
+    font-weight: 900;
+    position: relative;
+    z-index: 2;
+    min-width: 445px;
+}
+.footer .subtitle {
+    font-size: 1.125rem;
+    line-height: 150%;
+    color: var(--white);
+    z-index: 2;
+    font-weight: 500;
+}
+.footer .action {
+    z-index: 2;
+}
+.footer .action a {
+    background-color: var(--purple-600)
+}
